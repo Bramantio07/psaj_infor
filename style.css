@@ -8,8 +8,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #E0E0E0; /* Warna teks putih keabu-abuan untuk vibes gelap */
-    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #000000 100%); /* Gradient gelap seperti dunia Elden Ring */
+    color: #333; /* Teks gelap untuk kontras */
+    background: linear-gradient(135deg, #E0F7FA 0%, #B3E5FC 50%, #81D4FA 100%); /* Gradient biru cerah seperti langit Blue Archive */
     overflow-x: hidden;
 }
 
@@ -22,10 +22,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.9); /* Background hitam transparan */
+    background: rgba(30, 144, 255, 0.9); /* Biru transparan */
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #D4AF37; /* Border emas */
+    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.5);
+    border-bottom: 2px solid #FFD700; /* Border kuning */
 }
 
 nav {
@@ -40,13 +40,13 @@ nav {
 .logo {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #D4AF37; /* Emas */
+    color: #FFFFFF; /* Putih */
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
 .logo span {
-    color: #8B0000; /* Merah darah */
+    color: #FF69B4; /* Pink */
 }
 
 .nav-links {
@@ -59,22 +59,22 @@ nav {
 }
 
 .nav-links a {
-    color: #E0E0E0;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #D4AF37; /* Emas pada hover */
+    color: #FFD700; /* Kuning pada hover */
     transform: scale(1.1);
 }
 
 /* Hero Section */
 .hero-kelompok {
     height: 100vh;
-    background: url('https://example.com/elden-ring-bg.jpg') no-repeat center center/cover; /* Ganti dengan gambar background Elden Ring jika ada, atau gunakan gradient */
-    background: linear-gradient(135deg, #000000 0%, #4169E1 50%, #800080 100%); /* Gradient mistis jika tidak ada gambar */
+    background: url('https://example.com/blue-archive-bg.jpg') no-repeat center center/cover; /* Ganti dengan gambar background Blue Archive jika ada, atau gunakan gradient */
+    background: linear-gradient(135deg, #81D4FA 0%, #4FC3F7 50%, #29B6F6 100%); /* Gradient biru cerah */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,47 +83,48 @@ nav {
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.7); /* Overlay gelap */
+    background: rgba(255, 255, 255, 0.9); /* Overlay putih transparan */
     padding: 2rem;
-    border-radius: 10px;
-    border: 2px solid #D4AF37; /* Border emas */
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5); /* Glow emas */
+    border-radius: 20px; /* Lebih bulat untuk vibes anime */
+    border: 2px solid #FFD700; /* Border kuning */
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Glow kuning */
 }
 
 .hero-kelompok p:first-child {
     font-size: 1.2rem;
-    color: #E0E0E0;
+    color: #333;
     margin-bottom: 0.5rem;
 }
 
 .hero-kelompok h1 {
     font-size: 3rem;
     font-weight: 600;
-    color: #D4AF37; /* Emas */
+    color: #1E90FF; /* Biru */
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+    text-shadow: 0 0 10px rgba(30, 144, 255, 0.8);
 }
 
 .hero-kelompok p:nth-child(3) {
     font-size: 1.1rem;
-    color: #E0E0E0;
+    color: #333;
     margin-bottom: 2rem;
 }
 
 .hero-buttons .btn-cek {
-    background: #8B0000; /* Merah darah */
+    background: #FF69B4; /* Pink */
     color: #FFFFFF;
     padding: 0.8rem 2rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Bulat */
     font-weight: 600;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
 }
 
 .hero-buttons .btn-cek:hover {
-    background: #D4AF37; /* Emas pada hover */
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.8);
+    background: #FFD700; /* Kuning pada hover */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.8);
+    transform: translateY(-5px); /* Efek melompat */
 }
 
 /* Section Container */
@@ -134,20 +135,20 @@ nav {
 }
 
 .bg-light {
-    background: rgba(44, 44, 44, 0.5); /* Abu-abu gelap transparan */
+    background: rgba(224, 247, 250, 0.8); /* Biru muda transparan */
 }
 
 .bg-white {
-    background: rgba(0, 0, 0, 0.8); /* Hitam transparan */
+    background: rgba(255, 255, 255, 0.9); /* Putih transparan */
 }
 
 .section-title {
     font-size: 2.5rem;
     font-weight: 600;
-    color: #D4AF37; /* Emas */
+    color: #1E90FF; /* Biru */
     text-align: center;
     margin-bottom: 3rem;
-    text-shadow: 0 0 10px rgba(212, 175, 55, 0.8);
+    text-shadow: 0 0 10px rgba(30, 144, 255, 0.8);
 }
 
 /* Kelompok Grid */
@@ -158,19 +159,19 @@ nav {
 }
 
 .kelompok-card {
-    background: rgba(0, 0, 0, 0.9); /* Hitam transparan */
-    border: 2px solid #D4AF37; /* Border emas */
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.95); /* Putih transparan */
+    border: 2px solid #FFD700; /* Border kuning */
+    border-radius: 15px; /* Bulat */
     overflow: hidden;
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .kelompok-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.8); /* Glow emas */
+    transform: translateY(-10px) rotate(2deg); /* Efek miring lucu */
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.8); /* Glow kuning */
 }
 
 .card-img img {
@@ -191,20 +192,20 @@ nav {
 
 .card-info h3 {
     font-size: 1.5rem;
-    color: #D4AF37; /* Emas */
+    color: #1E90FF; /* Biru */
     margin-bottom: 0.5rem;
 }
 
 .card-info p {
-    color: #E0E0E0;
+    color: #333;
 }
 
 /* Laporan Section */
 .content-wrapper iframe {
     width: 100%;
     height: 600px;
-    border: 2px solid #D4AF37; /* Border emas */
-    border-radius: 10px;
+    border: 2px solid #FFD700; /* Border kuning */
+    border-radius: 15px; /* Bulat */
     margin-bottom: 2rem;
 }
 
@@ -214,31 +215,32 @@ nav {
 
 .content-desc p {
     margin-bottom: 1rem;
-    color: #E0E0E0;
+    color: #333;
 }
 
 .content-desc .btn-cek {
-    background: #8B0000; /* Merah darah */
+    background: #FF69B4; /* Pink */
     color: #FFFFFF;
     padding: 0.8rem 2rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Bulat */
     font-weight: 600;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.5);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
 }
 
 .content-desc .btn-cek:hover {
-    background: #D4AF37; /* Emas */
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.8);
+    background: #FFD700; /* Kuning */
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.8);
+    transform: translateY(-5px);
 }
 
 /* Video Section */
 .video-wrapper iframe {
     width: 100%;
     height: 400px;
-    border: 2px solid #D4AF37; /* Border emas */
-    border-radius: 10px;
+    border: 2px solid #FFD700; /* Border kuning */
+    border-radius: 15px; /* Bulat */
     margin-bottom: 2rem;
 }
 
@@ -247,16 +249,16 @@ nav {
 }
 
 .video-desc p {
-    color: #E0E0E0;
+    color: #333;
 }
 
 /* Footer */
 footer {
-    background: rgba(0, 0, 0, 0.9); /* Hitam transparan */
-    color: #E0E0E0;
+    background: rgba(30, 144, 255, 0.9); /* Biru transparan */
+    color: #FFFFFF;
     text-align: center;
     padding: 1rem;
-    border-top: 2px solid #D4AF37; /* Border emas */
+    border-top: 2px solid #FFD700; /* Border kuning */
 }
 
 footer p {
