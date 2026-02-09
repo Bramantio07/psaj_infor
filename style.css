@@ -1,4 +1,16 @@
-/* Reset dan Base Styles */
+/* Palette Warna Blue Archive */
+:root {
+    --ba-blue-primary: #1281FF;
+    --ba-blue-light: #4A9FFF;
+    --ba-blue-dark: #0054B2;
+    --ba-accent-pink: #FF6B8B; /* Warna Halo Arona/Arona Pink */
+    --ba-bg-light: #F0F7FF;
+    --ba-white: #FFFFFF;
+    --ba-text-dark: #2D3E50;
+    --ba-text-gray: #7A8B9A;
+    --ba-card-shadow: 0 4px 15px rgba(18, 129, 255, 0.15);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,40 +19,45 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--ba-bg-light);
+    color: var(--ba-text-dark);
     line-height: 1.6;
-    color: #2c3e50; /* Dark blue-gray text */
-    background-color: #e0f7fa; /* Light blue background, inspired by Blue Archive's clean skies */
     overflow-x: hidden;
 }
 
-/* Header Styles */
+/* --- Navigasi --- */
 header {
-    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 3px solid var(--ba-blue-primary);
+    position: sticky;
     top: 0;
-    width: 100%;
-    background: linear-gradient(135deg, #4a90e2, #007bff); /* Blue gradient, Blue Archive style */
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 15px 10%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--ba-blue-primary);
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .logo span {
-    color: #ff4081; /* Accent pink, like Blue Archive's highlights */
+    background: var(--ba-blue-primary);
+    color: white;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
 }
 
 .nav-links {
@@ -49,201 +66,175 @@ nav {
 }
 
 .nav-links li {
-    margin-left: 2rem;
+    margin-left: 30px;
 }
 
 .nav-links a {
-    color: #ffffff;
     text-decoration: none;
-    font-weight: 400;
-    transition: color 0.3s ease;
+    color: var(--ba-text-dark);
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 14px;
 }
 
 .nav-links a:hover {
-    color: #ff4081; /* Hover accent */
+    color: var(--ba-blue-primary);
 }
 
-/* Hero Section */
+/* --- Hero Section --- */
 .hero-kelompok {
-    height: 100vh;
-    background: linear-gradient(135deg, #4a90e2, #007bff), url('https://example.com/blue-archive-bg.jpg'); /* Placeholder for Blue Archive-like background */
-    background-size: cover;
-    background-position: center;
+    height: 80vh;
+    background: linear-gradient(135deg, var(--ba-blue-light), var(--ba-blue-primary));
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff;
+    color: white;
     position: relative;
+    /* Pola grid halus khas UI game */
+    background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px);
+    background-size: 30px 30px;
 }
 
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
-    padding: 2rem;
-    border-radius: 10px;
-    max-width: 600px;
+.hero-overlay h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-.hero-kelompok h1 {
-    font-size: 3rem;
-    margin: 1rem 0;
-    font-weight: 600;
-}
-
-.hero-kelompok p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+.hero-overlay p {
+    font-weight: 300;
+    letter-spacing: 2px;
 }
 
 .btn-cek {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: #ff4081; /* Accent button */
-    color: #ffffff;
+    margin-top: 25px;
+    padding: 12px 35px;
+    background-color: var(--ba-white);
+    color: var(--ba-blue-primary);
     text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-    transition: background 0.3s ease;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .btn-cek:hover {
-    background: #e91e63; /* Darker pink on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    background-color: var(--ba-accent-pink);
+    color: white;
 }
 
-/* Section Containers */
+/* --- Section Containers --- */
 .section-container {
-    padding: 4rem 2rem;
+    padding: 80px 10%;
     max-width: 1200px;
-    margin: 0 auto;
-}
-
-.bg-light {
-    background-color: #f8f9fa; /* Light gray-blue */
-}
-
-.bg-white {
-    background-color: #ffffff;
+    margin: auto;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #4a90e2; /* Blue title */
-    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: var(--ba-blue-primary);
+    position: relative;
 }
 
-/* Kelompok Grid */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--ba-accent-pink);
+    margin: 10px auto;
+}
+
+/* --- Grid Kelompok (Card) --- */
 .kelompok-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
 }
 
 .kelompok-card {
-    background: #ffffff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--ba-white);
     text-decoration: none;
     color: inherit;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    border: 1px solid rgba(18, 129, 255, 0.1);
+    box-shadow: var(--ba-card-shadow);
 }
 
 .kelompok-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+    border-color: var(--ba-blue-primary);
 }
 
 .card-img img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
+    border-bottom: 5px solid var(--ba-blue-primary);
 }
 
 .card-info {
-    padding: 1.5rem;
+    padding: 20px;
     text-align: center;
 }
 
 .card-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--ba-blue-primary);
 }
 
 .card-info p {
-    color: #7f8c8d;
-    font-weight: 300;
+    color: var(--ba-text-gray);
+    font-size: 14px;
 }
 
-/* Laporan Section */
-.content-wrapper iframe {
+/* --- Laporan & Video (Iframe) --- */
+.content-wrapper, .video-wrapper {
+    position: relative;
     width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--ba-card-shadow);
+    margin-bottom: 20px;
 }
 
-.content-desc {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.content-desc p {
-    margin-bottom: 1rem;
-    color: #7f8c8d;
-}
-
-/* Video Section */
-.video-wrapper iframe {
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 400px;
+    height: 100%;
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.video-desc {
+.content-desc, .video-desc {
     text-align: center;
-    margin-top: 1rem;
-    color: #7f8c8d;
+    margin-top: 20px;
 }
 
-/* Footer */
+/* --- Footer --- */
 footer {
-    background: linear-gradient(135deg, #4a90e2, #007bff);
-    color: #ffffff;
+    background: var(--ba-white);
+    padding: 30px;
     text-align: center;
-    padding: 1rem;
-    font-weight: 300;
+    border-top: 1px solid #ddd;
+    color: var(--ba-text-gray);
+    font-weight: 600;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .nav-links {
-        margin-top: 1rem;
-    }
-
-    .nav-links li {
-        margin-left: 1rem;
-    }
-
-    .hero-kelompok h1 {
-        font-size: 2rem;
-    }
-
-    .kelompok-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .section-container {
-        padding: 2rem 1rem;
-    }
+    .nav-links { display: none; } /* Untuk simple mobile */
+    .hero-overlay h1 { font-size: 2.5rem; }
 }
