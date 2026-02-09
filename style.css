@@ -3,7 +3,7 @@
     --ba-blue-primary: #1281FF;     /* Biru khas logo BA */
     --ba-blue-soft: #E3F2FD;        /* Biru sangat muda untuk bg */
     --ba-accent-pink: #FF6B8B;      /* Pink Arona */
-    --ba-white: #FFFFFF;
+    --ba-white: #3ec9ce;
     --ba-text-main: #2D3E50;        /* Biru gelap (hampir hitam) agar terbaca jelas */
     --ba-text-sub: #5A7184;         /* Abu-abu kebiruan untuk deskripsi */
     --ba-shadow: 0 8px 20px rgba(18, 129, 255, 0.1);
@@ -18,7 +18,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--ba-blue-soft);
-    color: var(--ba-text-main); /* Memastikan teks utama berwarna gelap */
+    color: var (--ba-text-main); /* Memastikan teks utama berwarna gelap */
     line-height: 1.6;
 }
 
