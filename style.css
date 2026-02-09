@@ -8,24 +8,19 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #333; /* Teks gelap untuk kontras */
-    background: linear-gradient(135deg, #E0F7FA 0%, #B3E5FC 50%, #81D4FA 100%); /* Gradient biru cerah seperti langit Blue Archive */
+    color: #2c3e50; /* Dark blue-gray text */
+    background-color: #e0f7fa; /* Light blue background, inspired by Blue Archive's clean skies */
     overflow-x: hidden;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-/* Header dan Navigasi */
+/* Header Styles */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(30, 144, 255, 0.9); /* Biru transparan */
+    background: linear-gradient(135deg, #4a90e2, #007bff); /* Blue gradient, Blue Archive style */
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(30, 144, 255, 0.5);
-    border-bottom: 2px solid #FFD700; /* Border kuning */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -38,15 +33,14 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #FFFFFF; /* Putih */
+    color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
 .logo span {
-    color: #FF69B4; /* Pink */
+    color: #ff4081; /* Accent pink, like Blue Archive's highlights */
 }
 
 .nav-links {
@@ -59,96 +53,84 @@ nav {
 }
 
 .nav-links a {
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     font-weight: 400;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #FFD700; /* Kuning pada hover */
-    transform: scale(1.1);
+    color: #ff4081; /* Hover accent */
 }
 
 /* Hero Section */
 .hero-kelompok {
     height: 100vh;
-    background: url('https://example.com/blue-archive-bg.jpg') no-repeat center center/cover; /* Ganti dengan gambar background Blue Archive jika ada, atau gunakan gradient */
-    background: linear-gradient(135deg, #81D4FA 0%, #4FC3F7 50%, #29B6F6 100%); /* Gradient biru cerah */
+    background: linear-gradient(135deg, #4a90e2, #007bff), url('https://example.com/blue-archive-bg.jpg'); /* Placeholder for Blue Archive-like background */
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     text-align: center;
+    color: #ffffff;
+    position: relative;
 }
 
 .hero-overlay {
-    background: rgba(255, 255, 255, 0.9); /* Overlay putih transparan */
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
     padding: 2rem;
-    border-radius: 20px; /* Lebih bulat untuk vibes anime */
-    border: 2px solid #FFD700; /* Border kuning */
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Glow kuning */
-}
-
-.hero-kelompok p:first-child {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    max-width: 600px;
 }
 
 .hero-kelompok h1 {
     font-size: 3rem;
+    margin: 1rem 0;
     font-weight: 600;
-    color: #1E90FF; /* Biru */
-    margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(30, 144, 255, 0.8);
 }
 
-.hero-kelompok p:nth-child(3) {
-    font-size: 1.1rem;
-    color: #333;
+.hero-kelompok p {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-.hero-buttons .btn-cek {
-    background: #FF69B4; /* Pink */
-    color: #FFFFFF;
-    padding: 0.8rem 2rem;
+.btn-cek {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #ff4081; /* Accent button */
+    color: #ffffff;
     text-decoration: none;
-    border-radius: 25px; /* Bulat */
+    border-radius: 25px;
     font-weight: 600;
-    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
+    transition: background 0.3s ease;
 }
 
-.hero-buttons .btn-cek:hover {
-    background: #FFD700; /* Kuning pada hover */
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.8);
-    transform: translateY(-5px); /* Efek melompat */
+.btn-cek:hover {
+    background: #e91e63; /* Darker pink on hover */
 }
 
-/* Section Container */
+/* Section Containers */
 .section-container {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .bg-light {
-    background: rgba(224, 247, 250, 0.8); /* Biru muda transparan */
+    background-color: #f8f9fa; /* Light gray-blue */
 }
 
 .bg-white {
-    background: rgba(255, 255, 255, 0.9); /* Putih transparan */
+    background-color: #ffffff;
 }
 
 .section-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: #1E90FF; /* Biru */
     text-align: center;
-    margin-bottom: 3rem;
-    text-shadow: 0 0 10px rgba(30, 144, 255, 0.8);
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #4a90e2; /* Blue title */
+    font-weight: 600;
 }
 
 /* Kelompok Grid */
@@ -159,30 +141,24 @@ nav {
 }
 
 .kelompok-card {
-    background: rgba(255, 255, 255, 0.95); /* Putih transparan */
-    border: 2px solid #FFD700; /* Border kuning */
-    border-radius: 15px; /* Bulat */
+    background: #ffffff;
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .kelompok-card:hover {
-    transform: translateY(-10px) rotate(2deg); /* Efek miring lucu */
-    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.8); /* Glow kuning */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .card-img img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.kelompok-card:hover .card-img img {
-    transform: scale(1.05);
 }
 
 .card-info {
@@ -191,81 +167,60 @@ nav {
 }
 
 .card-info h3 {
-    font-size: 1.5rem;
-    color: #1E90FF; /* Biru */
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
+    color: #2c3e50;
 }
 
 .card-info p {
-    color: #333;
+    color: #7f8c8d;
+    font-weight: 300;
 }
 
 /* Laporan Section */
 .content-wrapper iframe {
     width: 100%;
     height: 600px;
-    border: 2px solid #FFD700; /* Border kuning */
-    border-radius: 15px; /* Bulat */
-    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .content-desc {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .content-desc p {
     margin-bottom: 1rem;
-    color: #333;
-}
-
-.content-desc .btn-cek {
-    background: #FF69B4; /* Pink */
-    color: #FFFFFF;
-    padding: 0.8rem 2rem;
-    text-decoration: none;
-    border-radius: 25px; /* Bulat */
-    font-weight: 600;
-    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.5);
-}
-
-.content-desc .btn-cek:hover {
-    background: #FFD700; /* Kuning */
-    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.8);
-    transform: translateY(-5px);
+    color: #7f8c8d;
 }
 
 /* Video Section */
 .video-wrapper iframe {
     width: 100%;
     height: 400px;
-    border: 2px solid #FFD700; /* Border kuning */
-    border-radius: 15px; /* Bulat */
-    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .video-desc {
     text-align: center;
-}
-
-.video-desc p {
-    color: #333;
+    margin-top: 1rem;
+    color: #7f8c8d;
 }
 
 /* Footer */
 footer {
-    background: rgba(30, 144, 255, 0.9); /* Biru transparan */
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #4a90e2, #007bff);
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
-    border-top: 2px solid #FFD700; /* Border kuning */
+    font-weight: 300;
 }
 
-footer p {
-    font-size: 0.9rem;
-}
-
-/* Responsivitas */
+/* Responsive Design */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -289,11 +244,6 @@ footer p {
     }
 
     .section-container {
-        padding: 3rem 1rem;
-    }
-
-    .content-wrapper iframe,
-    .video-wrapper iframe {
-        height: 300px;
+        padding: 2rem 1rem;
     }
 }
